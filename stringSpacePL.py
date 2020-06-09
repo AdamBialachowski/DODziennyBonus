@@ -1,0 +1,6 @@
+dailyBonus = "Dzienny bonus"
+howManyAccount = "Podaj ile kont chcesz zalogować"
+next = "Dalej"
+add = "Dodaj"
+login = "Login:"
+password = "Hasło:"

@@ -8,6 +8,18 @@ def writeAllAccount():
         textbox.insert(INSERT, function.readAccount(accoun).split(' ')[0]+"\n")
 
 
+###################################################
+
+
+def writeAccountToList():
+    f = open("account.txt", "a")
+    f.write(login.get())
+    f.close()
+    print("aaa")
+
+
+
+
 root = Tk()
 root.title(stringSpacePL.dailyBonus)
 
@@ -16,7 +28,7 @@ loginLb = Label(root, text=stringSpacePL.login)
 passwordLb = Label(root, text=stringSpacePL.password)
 login = Entry(root, width=35, borderwidth=2)
 password = Entry(root, width=35, borderwidth=2)
-addAccount = Button(root, text=stringSpacePL.add, command=function.button_add(), width=30, height=2)
+addAccount = Button(root, text=stringSpacePL.add, command=writeAccountToList, width=30, height=2)
 
 
 writeAllAccount()#on textbox
